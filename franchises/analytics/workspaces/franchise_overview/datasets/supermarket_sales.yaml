@@ -1,0 +1,156 @@
+# A dataset is a logical object that represents a set of related facts, attributes, and attribute labels.
+# Datasets are basic organization units of a logical data model.
+# Read more about Datasets:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/model-data/concepts/dataset/
+
+type: dataset
+id: supermarket_sales
+
+table_path: supermarket_sales
+
+title: Supermarket sales
+description: Supermarket sales
+tags:
+  - Supermarket sales
+
+fields:
+  Branch:
+    type: attribute
+    source_column: Branch
+    data_type: STRING
+    title: Branch
+    description: Branch
+    tags:
+      - Supermarket sales
+  City:
+    type: attribute
+    source_column: City
+    data_type: STRING
+    title: City
+    description: City
+    tags:
+      - Supermarket sales
+  Customer_type:
+    type: attribute
+    source_column: Customer type
+    data_type: STRING
+    title: Customer type
+    description: Customer type
+    tags:
+      - Supermarket sales
+  Gender:
+    type: attribute
+    source_column: Gender
+    data_type: STRING
+    title: Gender
+    description: Gender
+    tags:
+      - Supermarket sales
+  Invoice_ID:
+    type: attribute
+    source_column: Invoice ID
+    data_type: STRING
+    title: Invoice ID
+    description: Invoice ID
+    tags:
+      - Supermarket sales
+  Payment:
+    type: attribute
+    source_column: Payment
+    data_type: STRING
+    title: Payment
+    description: Payment
+    tags:
+      - Supermarket sales
+  Product_line:
+    type: attribute
+    source_column: Product line
+    data_type: STRING
+    title: Product line
+    description: Product line
+    tags:
+      - Supermarket sales
+  Time:
+    type: attribute
+    source_column: Time
+    data_type: STRING
+    title: Time
+    description: Time
+    tags:
+      - Supermarket sales
+  Rating:
+    type: fact
+    source_column: Rating
+    data_type: NUMERIC
+    title: Rating
+    description: Rating
+    tags:
+      - Supermarket sales
+  Tax_5_:
+    type: fact
+    source_column: Tax 5%
+    data_type: NUMERIC
+    title: Tax 5
+    description: Tax 5
+    tags:
+      - Supermarket sales
+  Total:
+    type: fact
+    source_column: Total
+    data_type: NUMERIC
+    title: Total
+    description: Total
+    tags:
+      - Supermarket sales
+  Unit_price:
+    type: fact
+    source_column: Unit price
+    data_type: NUMERIC
+    title: Unit price
+    description: Unit price
+    tags:
+      - Supermarket sales
+  cogs:
+    type: fact
+    source_column: cogs
+    data_type: NUMERIC
+    title: Cogs
+    description: Cogs
+    tags:
+      - Supermarket sales
+  gross_income:
+    type: fact
+    source_column: gross income
+    data_type: NUMERIC
+    title: Gross income
+    description: Gross income
+    tags:
+      - Supermarket sales
+  gross_margin_percentage:
+    type: fact
+    source_column: gross margin percentage
+    data_type: NUMERIC
+    title: Gross margin percentage
+    description: Gross margin percentage
+    tags:
+      - Supermarket sales
+  quantity:
+    type: fact
+    source_column: Quantity
+    data_type: INT
+    title: Quantity
+    description: Quantity
+    tags:
+      - Supermarket sales
+
+references:
+  - dataset: Date
+    sources:
+      - source_column: Date
+        data_type: DATE
+        target: Date
+
+workspace_data_filters:
+  - filter_id: data-filter1
+    source_column: Branch
+    data_type: STRING

@@ -1,0 +1,9 @@
+# (C) 2024 GoodData Corporation
+profiles:
+  abc:
+    host: # Your Hostname
+    token: $GOODDATA_TOKEN #The environmental variable for you GoodData API token
+default_profile: abc
+
+access:
+  <CSV_DATA_SOURCE_ID>: $DB_PASS #You get this after uploading the .csv

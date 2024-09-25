@@ -1,0 +1,28 @@
+columnName: branch
+id: data-filter1
+title: per-branch-filter
+workspace:
+  id: franchise_overview
+  type: workspace
+workspaceDataFilterSettings:
+  - filterValues:
+      - A
+    id: per-branch-filter-A
+    title: is-branch-A
+    workspace:
+      id: branch_a
+      type: workspace
+  - filterValues:
+      - B
+    id: per-branch-filter-B
+    title: is-branch-B
+    workspace:
+      id: branch_b
+      type: workspace
+  - filterValues:
+      - C
+    id: per-branch-filter-C
+    title: is-branch-C
+    workspace:
+      id: branch_c
+      type: workspace

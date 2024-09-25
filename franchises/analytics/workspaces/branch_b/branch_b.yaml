@@ -1,0 +1,12 @@
+# A workspace is an environment where you organize, analyze, and present data.
+# Read more about workspaces:
+# https://www.gooddata.com/docs/cloud/create-workspaces/concepts/workspace/
+
+type: workspace
+id: branch_b
+
+title: Supermarket Sales - Branch B
+
+parent_workspace: franchise_overview
+
+permissions: {}

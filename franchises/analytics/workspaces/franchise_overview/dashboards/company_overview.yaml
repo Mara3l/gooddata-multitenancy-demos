@@ -1,0 +1,44 @@
+# A dashboard is a collection of visualizations that are organized into sections.
+# Because they allow filtering and other adjustments, they function as a dynamic presentation layer for your data analytics.
+# Read more about dashboards:
+# https://www.gooddata.com/docs/cloud/create-dashboards/concepts/dashboard/
+
+type: dashboard
+id: 27316a89-84ab-4075-95dd-54b9b527f565
+
+title: Company Overview
+
+sections:
+  - widgets:
+      - visualization: 31e68bad-35c6-42ae-a625-7e3d27dd030d
+        title: Revenue
+        columns: 4
+        rows: 8
+        date: Date
+      - visualization: eef139b4-5a43-4aa8-9164-0cef3a2b6169
+        title: Products Sold
+        columns: 4
+        rows: 8
+        date: Date
+      - visualization: 2a608e9a-54ef-4121-a7c1-3fe410f1a2a9
+        title: Gross Margin
+        columns: 4
+        rows: 8
+        date: Date
+  - widgets:
+      - visualization: 2f0cb7fa-1582-4241-b992-733295715507
+        title: Revenue & Products Sold Trend
+        columns: 12
+        rows: 22
+        date: Date
+  - widgets:
+      - visualization: e66efc46-12cf-4bdf-b64b-93eb9bd7b38c
+        title: Revenue by Brand and Product Line
+        columns: 6
+        rows: 22
+        date: Date
+      - visualization: acce1ca1-f616-469e-b9e5-7b7ab7bc7d1b
+        title: Products Sold by Brand and Product Line
+        columns: 6
+        rows: 22
+        date: Date
